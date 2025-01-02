@@ -1,5 +1,7 @@
 package puppy
 
+import "github.com/tjbegrow/dog"
+
 func Bark() string {
 	return "Woof!"
 }
@@ -9,5 +11,9 @@ func Barks() string {
 }
 
 func BigBark() string {
-	return
+	return dog.WhenGrownUp(Bark())
+}
+
+func BigBarks() string {
+	return dog.WhenGrownUp(Bark())
 }
